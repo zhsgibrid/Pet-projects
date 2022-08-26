@@ -1,0 +1,26 @@
+//Vriables
+@import './variables/_fonts.scss';
+@import './variables/_color.scss';
+@import './variables/_sizing.scss';
+@import './variables/_rating.scss';
+
+
+//Global
+@import './global/resets.scss';
+@import './global/global.scss';
+
+
+//Common
+@import './common/header.scss';
+@import './common/footer.scss';
+// @import './common/posts.scss';
+// @import './common/form.scss';
+
+
+//Pages
+@import './page/home.scss';
+// @import './page/about.scss';
+// @import './page/works.scss';
+// @import './page/blog.scss';
+// @import './page/blog/post.scss';
+// @import './page/contacts.scss';

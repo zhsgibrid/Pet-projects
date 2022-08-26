@@ -1,0 +1,60 @@
+header{
+    
+    nav {
+        padding: 17px 0;
+        background-color: $color-contact; 
+        margin-bottom: 28px;
+    }
+
+    .container__nav-list{
+        // width: 80%;
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        .icon{
+            padding:0 10px 0 0;
+            
+        }
+        li select{
+            // background: url(/img/down_arrow.svg) no-repeat right/ 7px 4px;
+            appearance: none;
+            border: 0;
+            outline: 0;
+            // font: inherit;
+
+            color: $color-onClick;
+            background-color: $color-contact; 
+            cursor: pointer;
+            position: relative;
+            left: 12px;
+
+            box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+            &:focus {
+                outline: none;
+            }
+            
+        }
+        
+        div{
+            padding-left: 229px;
+            span{
+                padding: 0 8px 0 9px;
+                color:$color-onClick ;
+            }
+        }
+
+        
+
+    }
+    .login{
+        display: flex;
+        left: auto;
+    }
+    .hero{
+        display: flex;
+        ul{
+            display: flex;
+        }
+    }
+
+}

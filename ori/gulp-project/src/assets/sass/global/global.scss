@@ -1,0 +1,120 @@
+body {
+    font-family: $main-font;
+   
+}
+
+.container{
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+    // padding: 0 20px;
+    @media (max-width: $tab) {
+        // font-size: 15px;
+        // line-height: 20px;
+    }
+}
+
+.logo {
+    
+    // margin: 7px 144px 0px 144px;
+    width: 207px;
+    padding: 0;
+    // height: 52px;
+
+    // min-width: 135px;
+    // display: block;
+    // margin-right: 50px;
+    // z-index: 10;
+    // position: relative;
+    @media (max-width: $tab) {
+        width: 140px;
+    }
+}
+
+h1{
+    font-family: $title-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 60px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    @media (max-width: $tab) {
+      
+        font-size: 24px;
+        line-height: 38px;
+        text-align: center;
+        letter-spacing: 0.05em;
+
+    }
+}
+
+.button{
+    font-family:$main-font ;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 36px;
+}
+.contact-text{
+    font-family:$main-font ;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.h3{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 38px;
+    color: $color-upsub_title;
+}
+
+
+h2{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 39px;
+    /* identical to box height */
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    /* Bark Blue */
+    color: $color-sub_title;
+}
+
+.h4 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 38px;
+    /* or 158% */
+
+    /* Dark Grey */
+    color: $dark-grey;
+}
+
+.h5{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 38px;
+    text-transform: uppercase;
+
+    /* Dark Grey */
+    color: $dark-grey;
+}
+
+.h6{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.h7{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-transform: uppercase;
+
+    /* Dark Grey */
+    color: $dark-grey;
+}

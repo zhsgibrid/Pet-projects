@@ -1,0 +1,278 @@
+.fons{
+    max-width:1600px ;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    @media (max-width: $tab) {
+       
+    }
+}
+// header{
+//     display: flex;
+//     // align-items: center;
+//     justify-items: center;
+//     width: 1600px;
+//     overflow: hidden;
+  
+// }
+header{
+    // .header{
+        // display: flex;
+        max-width: 1600px;
+        width: 100%;
+        justify-content: center;
+        overflow: hidden;
+        // background: rgba(33, 33, 33, 0.3);
+       
+        div[class="gam-btn"]{
+            display: none;
+    
+            @media (max-width: $tab) {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 7px;
+                width: 48px;
+                height: 48px;
+                cursor: pointer;
+                order: 5;
+            }
+        }
+    
+        .gam-line {
+    
+            @media (max-width: $tab) {
+                width: 24px;
+                height: 1px;
+                background: $home-color;
+            }
+        }
+    
+        .gam-btn {
+            z-index: 10;
+        }
+    
+        .gam-btn-input {
+            display: none;
+    
+            &:checked {
+                ~.navbar {
+                    display: flex;
+                    // width: ;
+                }
+    
+                ~.gam-btn {
+                    background-color: red;
+                }
+            }
+        // }
+    }
+
+    //Nav start
+    
+    nav{
+        // justify-self: center;
+        display: flex;
+        background:rgba(33, 33, 33, 0.3);
+        justify-content: center;
+        
+    }
+    .navbarfull{
+        display: flex;
+        justify-content: space-between;
+        // justify-self: center;
+        align-items: center;
+        
+        width: 1360px;
+    }
+
+    .navbar {
+        overflow: hidden;
+        // padding-right: 150px;
+        @media (max-width: $tab) {
+            display: none;
+            position: fixed;
+            // width: 100%;
+            // height: 100vh;
+            top: 21%;
+            right: 6%;
+            flex-direction: column;
+            align-items: center;
+            // justify-content: center;
+            // gap: 26px;
+            transform: translate(-50%, -50%);
+            background: rgba(33, 33, 33, 0.3);
+            box-shadow: 5px 5px 10px $color-black;
+            // margin-top: 10px;
+        }
+        .close{
+            display: none;
+            position: absolute;
+            opacity: 0;
+            @media ( max-width:$tab){
+                display: block;
+                top: -1%;
+                right: 5%;
+                opacity: 100%;
+                color: $lets-color;
+            }
+        }
+    }
+    
+    .navbar a[class="content"] {
+        float: left;
+        font-size: 16px;
+        color: $home-color;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    .navbar-menu {
+        float: left;
+        overflow: hidden;
+    }
+    
+    .navbar-menu .dropmenu {
+        font-size: 16px;  
+        border: none;
+        outline: none;
+        color:$home-color;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+        cursor: pointer;
+        
+    }
+    
+    .navbar a[class="content"]:hover, .navbar-menu:hover .dropmenu {
+        // background: rgba(33, 33, 33, 0.3);
+       
+    }
+    
+    .navbar-content {
+        display: none;
+        position: absolute;
+        background:  rgba(33, 33, 33, 0.8);
+        min-width: 160px;
+        z-index: 1;
+        border-top-width: 3px;
+        border-top-style: solid;
+        border-top-color: $color-border;
+        border-radius: 0  0 15px 15px;
+    }
+    
+    .navbar-content a[class="content"] {
+        float: none;
+        color: $home-color;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+        
+    }
+    
+    a[class="content"]:hover, button[class="dropmenu"]:hover {
+        color: $home-text;
+
+        .droparrow {
+            filter:  invert(62%) sepia(78%) saturate(965%) hue-rotate(170deg) brightness(103%) contrast(103%);
+            // background-color: $home-text;
+            // color: $home-text;
+        } 
+    }
+    // {
+    //     color: $home-text;
+    // }
+    
+    .navbar-menu:hover .navbar-content {
+        display: block;
+    }
+
+    //Nav End
+
+
+    .button{
+        // margin-left: 151px;
+        width: 162px;
+        height: 42px;
+        background-color:  rgba(33, 33, 33, 0.0);
+        color: $home-color;
+        border: 2px solid $home-color;
+        border-radius: 6px;
+        cursor: pointer;
+        // justify-self: flex-end;
+    
+        @media (max-width: $tab) {
+        
+            // position: absolute;
+            // opacity: 0;
+            border-color: $lets-color;
+            color: $lets-color;
+            margin-left: 0;
+            margin-top: 28px;
+            margin-bottom: 77px;
+        }
+    }
+
+    .button:hover {
+        background: $lets-color;
+        border-color: $lets-color;
+    }
+
+    .focus{ 
+        // margin: 0 0;
+        margin-left: 5%;
+        color: $home-color;
+        max-width: 551px;
+        width: 100%;
+        
+        .h1{
+            margin-top: 147px;
+            margin-bottom: 16px;
+        }
+        .h6{
+            margin-bottom: 40px;
+        }
+        button{
+            margin-left:5% ;
+            margin-right: 24px;
+            margin-bottom: 338px;
+            cursor: pointer;
+        }
+
+        
+    }
+    .ori{
+        // display: block;
+        position: absolute;
+        // transform: translate(-50% -50%);
+        top: 18%;
+        right: 12.5%;
+    }
+    .massage{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        border: 10px solid $home-color;
+        background: $home-color;
+        width: 48px;
+        height: 192px;
+        border-radius: 3px;
+        right: 0;
+        top: 409px;
+        box-shadow:  2px 2px 10px $color-black;
+
+        .ico{
+            width: 24px;
+            border: 12px solid $home-color;
+
+        }
+    }
+
+}     
+   
+

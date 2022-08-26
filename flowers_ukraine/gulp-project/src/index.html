@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Шлях до css це відносний шлях не залежить ввід папки-->
+    <link rel="stylesheet" href="@@webRoot/css/bundle.min.css">
+</head>
+
+<body>  
+    <!--Header-->  
+    <header > 
+        <nav>
+            <div class="container">
+                <div class="h4">
+                    <ul class="container__nav-list">
+                        <li id="money">Валюта 
+                            <select name="money" onchange="change_currency(this);">
+                                <option value="uah">UAH</option>
+                                <option value="usd">USD</option>
+                                <option value="eur">EUR</option>
+                            </select>
+                        </li>
+                        <li id="language">Язык
+                            <select name="language">
+                                <option value="pycc">RU</option>
+                                <option value="укр">UK</option>
+                                <option value="eng">ENG</option>
+                            </select>
+                        </li>
+                        <li id="city">Город
+                            <select name="city">
+                                <option value="Киев">Киев</option>
+                                <option value="Харьков">Харьков</option>
+                                <option value="Днепр">Днепр</option>
+                                <option value="Запорожье">Запорожье</option>
+                                <option value="Львов">Львов</option>
+                                <option value="Черновцы">Черновцы</option>
+                                <option value="Ровно">Ровно</option>
+                                <option value="Одесса">Одесса</option>
+                            </select>
+                        </li>
+                        <li><img class="icon" src="@@webRoot/img/heart.svg" alt="icon"> Закладки</li>
+                        <li><img class="icon" src="@@webRoot/img/car.svg" alt="icon">Доставка и оплата</li>
+                        <li><img class="icon" src="@@webRoot/img/phone.svg" alt="icon">Контакты</li>
+                        <div><img class="icon" src="@@webRoot/img/man.svg" alt="icon"><a href="">Вход</a><span>|</span><a href="">Регистрация</a></div>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            
+            <div class="hero">
+                <div class="hero-nav">
+                    <img class="logo" src="@@webRoot/img/logo.png" alt="logo">
+                    <div class="middle_section">
+
+                        <div class="search_fields">
+                            <select class="h5" name="category">
+                                <option class="h5" disabled="true" selected="true">Поиск по категориям</option>
+                                <option class="h5" value="sale">Акции</option>
+                                <option class="h5" value="season">Сезонные</option>
+                                <option class="h5" value="gifts">Подарки</option>
+                            </select>
+                            
+                            <div class="goods_search">
+                                <form action="">
+                                    <input class="h5" id="search" name="seacrh" type="text" placeholder="Поиск по товарам">
+                                    <input id="search_submit" type="submit" value="">
+                                </form>
+                            </div>
+                        </div>
+    
+                        <div class="catalog">
+                            <ul>
+                                <li><span class="text_2">Каталог товаров</span></li>
+                                <li>Форум</li>
+                                <li>Отзывы</li>
+                                <li>Акции</li>
+                                <li>Новости</li>
+                                <li>Информаци</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="information">
+                        <div class="icons">
+                            <img class="logo_log" src="@@webRoot/img/viber.svg" alt="logo">
+                            <img class="logo_log" src="@@webRoot/img/instagram.svg" alt="logo">
+                            <img class="logo_log" src="@@webRoot/img/telegram.svg" alt="logo">
+                            <img class="logo_log" src="@@webRoot/img/facebook.svg" alt="logo">
+                        </div>
+                        <p>+38 (067) 829 25 78</p>
+                        <div class="shoping">
+                            <div class="icon_basket">
+                                <img src="@@webRoot/img/heart.svg" alt="icon">
+                                <div class="circle">
+                                    <img src="@@webRoot/img/ellipse.svg" alt="">
+                                    <span class="h6" id="heart_num">0</span>
+                                </div>
+                            </div>
+                            <div class="icon_basket">
+                                <img id="cart" src="@@webRoot/img/basket.svg" alt="icon">
+                                <div class="circle">
+                                    <img src="@@webRoot/img/ellipse.svg" alt="">
+                                    <span class="h6" id="cart_num">0</span>
+                                </div>
+                                <!-- <span class="circle"></span> -->
+                                <!-- <span>0</span> -->
+                            </div>
+                            <div class="cart_sum"><span id="cart_sum">0 </span><span id="currency"></span></div>
+                        </div>
+                    </div>
+                    
+                    </div>
+                </div>
+
+                <div class="var">
+                    <div id="first"><img class="title_img" src="@@webRoot/img/title_img.jpg" alt="img">
+                        <p class="sub-title">Скидки -6% на все букеты по предзаказу на 8 марта</p>
+                    </div>
+                    <div class="sub-title"><img class="sub-title_img" src="@@webRoot/img/img1.jpg" alt="img">
+                        <p class="mini_sub-title">Розы</p>
+                    </div> 
+                    <div class="sub-title"><img class="sub-title_img" src="@@webRoot/img/img2.jpg" alt="img">
+                        <p class="mini_sub-title">Подарки</p>
+                    </div> 
+                    <div class="sub-title"><img class="sub-title_img" src="@@webRoot/img/img3.jpg" alt="img">
+                        <p class="mini_sub-title">Подарочные корзины</p>
+                    </div> 
+                    <div class="sub-title"><img class="sub-title_img" src="@@webRoot/img/img4.jpg" alt="img">
+                        <p class="mini_sub-title">Цветы в коробке</p>
+                    </div> 
+                </div>  
+
+                <div class="bonus">
+                    <img src="@@webRoot/img/bonus1.png" alt="img">
+                    <img src="@@webRoot/img/bonus2.png" alt="img">
+                    <img src="@@webRoot/img/bonus3.png" alt="img">
+                    
+                </div>
+                
+            </div>
+        </header>
+    <!-- Header End -->
+    <div class="container">
+        <section class="sales" id="sales">
+            <h2 class="big_title">
+                Акции
+            </h2>
+            <div> стрелочки</div>
+        </section>
+        
+        <section class="sales" id="season">
+              <h2 class="big_title">
+                Сезонные
+            </h2>
+            <div> стрелочки</div>
+        </section>
+        
+        <section class="sales" id="gifts">
+            <h2 class="big_title">
+                Подарки
+            </h2>
+            <div> стрелочки</div>
+        </section>
+        <section class="news_block">
+
+            <h2 class="big_title">
+                Форум
+            </h2>
+            <span> Все новости</span>
+            <div class="all_news">
+
+                <div class="news">
+                    <img src="@@webRoot/img/blog1.jpg" alt="img">
+                    <p class="h2">Какие цветы под запретом: что нельзя дарить</p>
+                    <p class="h4_1">Осведомленности в сфере новых трендов цветочного дизайна и знакомства с работами...</p>
+                </div>
+                <div class="news">
+                    <img src="@@webRoot/img/blog2.jpg" alt="img">
+                    <p class="h2">Как сохранить букет свежим: советы и рекомендации</p>
+                    <p class="h4_1">Осведомленности в сфере новых трендов цветочного дизайна и знакомства с работами...</p>
+                </div>
+                <div class="news">
+                    <img src="@@webRoot/img/blog3.jpg" alt="img">
+                    <p class="h2">Цветочный этикет - как правильно дарить цветы</p>
+                    <p class="h4_1">Осведомленности в сфере новых трендов цветочного дизайна и знакомства с работами...</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="map">
+
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBm6S23rrUFHMrgLcEQqMGr9ZSll5a6vL4&callback=initMap"></script>
+
+            <div class="contact">
+                <div id="map"></div>
+                
+                <!-- <img class="background" src="@@webRoot/img/background_contact.png" alt="img"> -->
+                <div class="contact_info">
+                    <img class="logo" src="@@webRoot/img/logo.png" alt="logo">
+                    <div class="info_block">
+                        <div class="block">
+                            <p class=".h4_2"> <img src="@@webRoot/img/phone.svg" alt="logo"> Телефон:</p>
+                            <p class=".h4">+38 (067) 829 25 78</p>
+                            <p class=".h4">+38 (063) 829 25 78</p>
+                        </div>
+                        <div class="block">
+                            <p class=".h4_2"> <img src="@@webRoot/img/skype.svg" alt="logo"> Skype</p>
+                            <p class=".h4">Flowers-Ukraine</p>
+                        </div>
+                        <div class="block">
+                            <p class=".h4_2"> <img src="@@webRoot/img/massage.svg" alt="logo"> Почта</p>
+                            <p class=".h4">flowers.ukraine2121@gmail.com</p>
+                        </div>
+                        <div class="icons">
+                            <img src="@@webRoot/img/instagram.svg" alt="logo"> 
+                            <img src="@@webRoot/img/skype_1.svg" alt="logo"> 
+                            <img src="@@webRoot/img/facebook.svg" alt="logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>        
+    </div>
+    <div class="footer_back">
+        <img class="background_left" src="@@webRoot/img/home1.png" alt="img"> 
+        <img class="background_right" src="@@webRoot/img/home2.png" alt="img"> 
+    </div>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <img class="background_left" src="@@webRoot/img/footer_img1.png" alt="img">
+        <img class="background_right" src="@@webRoot/img/footer_img2.png" alt="img">  
+        
+        <div class="container">
+            <div class="footer__block">
+                <div class="inform">
+
+                    <img class="footer__logo" src="@@webRoot/img/logo_footer.png" alt="logo">
+                    <div class="text_block">
+                        <span class="text" id="info">ИНФОРМАЦИЯ</span>
+                        <ul class="h4">
+                            <li> О НАС</li>
+                            <li> ДОСТАВКА И ОПЛАТА</li>
+                            <li> ПОЛИТИКА КОНДЕНЦИФИАЛЬНОСТИ</li>
+                        </ul>
+                    </div> 
+
+                    <div class="text_block">
+                        <span class="text" id="support">СЛУЖБА ПОДДЕРЖКИ</span>
+                        <ul class="h4">
+                            <li>КАРТА САЙТА</li>
+                            <li>ВОЗВРАТ ТОВАРА</li>
+                            <li>СВЯЗАТЬСЯ С НАМИ</li>
+                            <li>ДЛЯ СОТРУДНИЧЕСТВА</li>
+                        </ul>
+                    </div> 
+
+                    <div class="text_block">
+                        <span class="text" id="personal">ЛИЧНЫЙ КАБИНЕТ</span>
+                        <ul class="h4">
+                            <li>ЛИЧНЫЙ КАБИНЕТ</li>
+                            <li>ИСТОРИЯ ЗАКАЗА</li>
+                            <li>ЗАКЛАДКИ</li>
+                            <li>СПИСОК НОВОСТЕЙ</li>
+                        </ul>
+                    </div> 
+                    <div class="text_block">
+                        <span class="text" id="misc">ДОПОЛНИТЕЛЬНО</span>
+                        <ul class="h4">
+                            <li>ПОДАРОЧНЫЕ</li>
+                            <li>СЕРТИФИКАТЫ</li>
+                            <li>АКЦИИ</li>
+                            <li>ЦВЕТЫ В ОФИС</li>
+                        </ul>
+                    </div> 
+                </div>
+                <div class="line"></div>
+                
+                <!-- <hr > -->
+                <div class="footer__copyright">
+                    <p class="h4">© By Zhavoronkova Svitlana for Beetroot course </p>
+                    <div class="payment">
+                        <p class="h4"> Способы оплаты:</p>
+                        <img src="@@webRoot/img/privat.svg" alt="logo">
+                        <img src="@@webRoot/img/liqpay.svg" alt="logo">
+                        <img src="@@webRoot/img/mastercard.svg" alt="logo">
+                        <img src="@@webRoot/img/maestro.svg" alt="logo">
+                        <img src="@@webRoot/img/visaelectron.svg" alt="logo">
+                        <img src="@@webRoot/img/visa.svg" alt="logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+</div>
+
+
+    <!--Обовязково додавати потрібно для JS -->
+    <script> var exports = {}; </script>
+    <script src="@@webRoot/js/index.js"></script>
+    <script src="@@webRoot/js/card_gen.js"></script>
+    <script src="@@webRoot/js/rating.js"></script>
+    <script src="@@webRoot/js/likes.js"></script>
+    <script src="@@webRoot/js/cart.js"></script>
+    <script src="@@webRoot/js/map.js"></script>
+    <script src="@@webRoot/js/currency.js"></script>
+
+
+
+
+</body>
+
+</html>

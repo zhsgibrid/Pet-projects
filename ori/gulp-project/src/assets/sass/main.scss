@@ -1,0 +1,17 @@
+//Varibles
+@import './variables/__colors.scss';
+@import './variables/__fonts.scss';
+@import './variables/__sizing.scss';
+
+//Global
+@import './global/global.scss';
+
+//Common
+@import './common/header.scss';
+@import './common/offer.scss';
+@import './common/footer.scss';
+// @import './common/posts.scss';
+// @import './common/form.scss';
+
+//Page
+@import './page/home.scss';

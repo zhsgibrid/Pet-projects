@@ -1,0 +1,99 @@
+body {
+    font-family: $main-font;
+}
+
+.container{
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.logo {
+    min-width: 135px;
+    display: block;
+    margin-right: 50px;
+    z-index: 10;
+    position: relative;
+}
+.title{
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 64px;
+    letter-spacing: 0.05em;
+    color: $color-black;
+    font-family: $sub-font;
+
+    @media (max-width: $tab) {
+        font-size: 33px;
+        line-height: 50px;
+    }
+}
+.sub-title{
+    font-weight: 400;
+font-size: 23px;
+line-height: 166%;
+letter-spacing: 0.1em;
+color: $color-black;
+font-family: $sub-font;
+}
+.text{
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 32px;
+    letter-spacing: 0.05em;
+    color: $color-text; 
+    
+    @media (max-width: $tab) {
+        font-size: 16px;
+        line-height: 27px;
+    }
+}
+ 
+
+.h3 {
+    font-family: $sub-font;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 166%;
+    letter-spacing: 0.1em;
+    color: $color-black;
+}
+
+.h5{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: 0.1em;
+    font-family: $main-font;
+    color: $color-h5;
+}
+
+.copyright{
+    font-family: $main-font;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    color: $color-black;
+
+}
+
+.h6 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: 0.1em;
+    color: $color-h6;
+}
+
+.h9 {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 27px;
+    letter-spacing: 0.1em;
+    color: $color-h6;
+}
+
+.arrow{
+    width: 23px;
+}
+
+
