@@ -19,12 +19,13 @@
             <div class="container">
                 <div class="h4">
                     <ul class="container__nav-list">
-                        <li id="money">Валюта 
+                        <li id="money">Валюта
                             <select name="money" onchange="change_currency(this);">
                                 <option value="uah">UAH</option>
                                 <option value="usd">USD</option>
                                 <option value="eur">EUR</option>
                             </select>
+                            <span class="arrow_down_little"></span>
                         </li>
                         <li id="language">Язык
                             <select name="language">
@@ -32,6 +33,7 @@
                                 <option value="укр">UK</option>
                                 <option value="eng">ENG</option>
                             </select>
+                            <span class="arrow_down_little"></span>
                         </li>
                         <li id="city">Город
                             <select name="city">
@@ -44,6 +46,7 @@
                                 <option value="Ровно">Ровно</option>
                                 <option value="Одесса">Одесса</option>
                             </select>
+                            <span class="arrow_down_little"></span>
                         </li>
                         <li><img class="icon" src="@@webRoot/img/heart.svg" alt="icon"> Закладки</li>
                         <li><img class="icon" src="@@webRoot/img/car.svg" alt="icon">Доставка и оплата</li>
@@ -62,7 +65,7 @@
 
                         <div class="search_fields">
                             <select class="h5" name="category">
-                                <option class="h5" disabled="true" selected="true">Поиск по категориям</option>
+                                <option class="h5" disabled="true" selected="true"><span class="arrow_down"></span>Поиск по категориям</option>
                                 <option class="h5" value="sale">Акции</option>
                                 <option class="h5" value="season">Сезонные</option>
                                 <option class="h5" value="gifts">Подарки</option>
@@ -78,12 +81,12 @@
     
                         <div class="catalog">
                             <ul>
-                                <li class="h4_bold">Каталог товаров</li>
+                                <li class="h4_bold">Каталог товаров <span class="arrow_down"></span></li>
                                 <li class="h4_bold">Форум</li>
                                 <li class="h4_bold">Отзывы</li>
                                 <li class="h4_bold">Акции</li>
                                 <li class="h4_bold">Новости</li>
-                                <li class="h4_bold">Информаци</li>
+                                <li class="h4_bold">Информаци <span class="arrow_down"></span></li>
                             </ul>
                         </div>
                     </div>

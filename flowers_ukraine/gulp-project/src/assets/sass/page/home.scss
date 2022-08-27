@@ -11,7 +11,25 @@ body{
     // background-size: 1920px;
     // background-repeat: no-repeat; 
 
+    .arrow_down{
+        display: inline-block;
+        cursor: pointer;
+        width: 10px; 
+        height: 6px; 
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 5px solid $color-contact;
+    }
 
+    .arrow_down_little{
+        display: inline-block;
+        cursor: pointer;
+        // width: 10px; 
+        height: 6px; 
+        border-left: 3px solid transparent;
+        border-right: 3px solid transparent;
+        border-top: 3px solid $color-text;
+    }
    
     .hero-nav{
         width: 1416px;
@@ -21,6 +39,7 @@ body{
             width: 117px;
             margin-bottom: 55px;
         }
+
         
         .search_fields{
             width: 820px;
