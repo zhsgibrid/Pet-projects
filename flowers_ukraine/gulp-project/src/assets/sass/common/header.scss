@@ -15,6 +15,35 @@ header{
             padding:0 10px 0 0;
             
         }
+        .icon_counter{
+            display: inline;
+            position: relative;
+            right: 10px;
+
+        }
+            .heart_counter{
+                position: relative;
+                left: 0;
+                top: 6px;
+                width: 18px;
+                height: 16px;
+            }
+            .circle_counter{
+                display: inline;
+                position: relative;
+                left: -10px;
+                width: 16px;
+                top: 0;
+                img{
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+            .h5_med{
+                position: absolute;
+                left: 4px;
+                top: -1px;
+            }        
         li select{
             // background: url(/img/down_arrow.svg) no-repeat right/ 7px 4px;
             appearance: none;
@@ -35,7 +64,7 @@ header{
             
         }
         
-        div{
+        .login{
             padding-left: 229px;
             span{
                 padding: 0 8px 0 9px;
