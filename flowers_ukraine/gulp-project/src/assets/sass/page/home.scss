@@ -72,6 +72,12 @@ body{
             .text_2{
                 color: $color-onClick
             }
+            li{
+                cursor: pointer;   
+            }
+            li:hover{
+                color: $color-onClick
+            }
         }
         .information{
             display: flex;
