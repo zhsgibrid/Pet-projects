@@ -23,7 +23,7 @@ const localServer = {
   src: 'src/',
   assets: './src/assets/',
   out: './dist/',
-  port: 9092,
+  port: 9091,
   url: 'http://localhost:',
 }
 
@@ -99,7 +99,7 @@ function server() {
   return connect.server({
     port: localServer.port,
     root: localServer.out,
-    livereload: true,
+    // livereload: true,
   })
 }
 //Автоматов відкриває в браузері, по дефолту я не додавай в exports.dev
@@ -111,5 +111,5 @@ function openLocal() {
 // setTimeout(openLocal, 2000); //Відкриває автоматов в браузері
 
 exports.dev = parallel(clean, server, html, css, js, img, gulpWatch); //тут послідовність функцій які запускаются, наприклад ви можете додати щоб автоматом браузер відкривався openLocal
-
+exports.build = parallel(clean, html, css, js, img);
 
