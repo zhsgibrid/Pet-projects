@@ -99,7 +99,7 @@ function server() {
   return connect.server({
     port: localServer.port,
     root: localServer.out,
-    // livereload: true,
+    livereload: true,
   })
 }
 //Автоматов відкриває в браузері, по дефолту я не додавай в exports.dev
