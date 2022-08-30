@@ -49,14 +49,11 @@
                             <span class="arrow_down_little"></span>
                         </li>
                         <li>
-                            <!-- <div class="icon_counter"> -->
-                                <img class="heart_counter" src="@@webRoot/img/heart.svg" alt="icon">
-                                <div class="circle_counter">
-                                    <img src="@@webRoot/img/circle_2.svg" alt="">
-                                    <span class="h5_med" id="heart_num_1">0</span>
-                                </div>
-                            <!-- </div> -->
-
+                            <img class="heart_counter" src="@@webRoot/img/heart.svg" alt="icon">
+                            <div class="circle_counter">
+                                <img src="@@webRoot/img/circle_2.svg" alt="">
+                                <span class="h5_med" id="heart_num_1">0</span>
+                            </div>
                             <span>Закладки</span>
                         </li>
                         <li><img class="icon" src="@@webRoot/img/car.svg" alt="icon">Доставка и оплата</li>
@@ -108,58 +105,58 @@
                             <img class="logo_log" src="@@webRoot/img/telegram.svg" alt="logo">
                             <img class="logo_log" src="@@webRoot/img/facebook.svg" alt="logo">
                         </div>
-                        <p>+38 (067) 829 25 78</p>
+                        <p class="number">+38 (067) 829 25 78</p>
                         <div class="shoping">
-                            <div class="icon_basket">
+                            <div class="icon_basket" onclick="open_liked()">
                                 <img class="heart_counter" src="@@webRoot/img/heart.svg" alt="icon">
                                 <div class="circle">
                                     <img src="@@webRoot/img/ellipse.svg" alt="">
                                     <span class="h6" id="heart_num">0</span>
                                 </div>
+                                
                             </div>
-                            <div class="icon_basket">
+                            <div class="modal_window" id="heart_modal"></div>
+                            <div class="icon_basket" onclick="open_cart()">
                                 <img id="cart" src="@@webRoot/img/basket.svg" alt="icon">
                                 <div class="circle">
                                     <img src="@@webRoot/img/ellipse.svg" alt="">
                                     <span class="h6" id="cart_num">0</span>
                                 </div>
-                                <!-- <span class="circle"></span> -->
-                                <!-- <span>0</span> -->
                             </div>
+                            <div class="modal_window" id="cart_modal"></div>
                             <div class="cart_sum"><span id="cart_sum">0 </span><span id="currency"></span></div>
                         </div>
                     </div>
-                    
-                    </div>
                 </div>
+            </div>
 
-                <div class="var">
-                    <div id="first"><img class="title_img" src="@@webRoot/img/title_img.jpg" alt="img">
-                        <p class="sub-title">Скидки -6% на все букеты по предзаказу на 8 марта</p>
-                    </div>
-                    <div class="sub-title"><img class="sub-title_img" src="@@webRoot/img/img1.jpg" alt="img">
-                        <p class="mini_sub-title">Розы</p>
-                    </div> 
-                    <div class="sub-title"><img class="sub-title_img" src="@@webRoot/img/img2.jpg" alt="img">
-                        <p class="mini_sub-title">Подарки</p>
-                    </div> 
-                    <div class="sub-title"><img class="sub-title_img" src="@@webRoot/img/img3.jpg" alt="img">
-                        <p class="mini_sub-title">Подарочные корзины</p>
-                    </div> 
-                    <div class="sub-title"><img class="sub-title_img" src="@@webRoot/img/img4.jpg" alt="img">
-                        <p class="mini_sub-title">Цветы в коробке</p>
-                    </div> 
-                </div>  
-
-                <div class="bonus">
-                    <img src="@@webRoot/img/bonus1.png" alt="img">
-                    <img src="@@webRoot/img/bonus2.png" alt="img">
-                    <img src="@@webRoot/img/bonus3.png" alt="img">
-                    
+            <div class="var">
+                <div id="first"><img class="title_img" src="@@webRoot/img/title_img.jpg" alt="img">
+                    <p class="sub-title">Скидки -6% на все букеты по предзаказу на 8 марта</p>
                 </div>
+                <div class="sub-title"><img class="sub-title_img" src="@@webRoot/img/img1.jpg" alt="img">
+                    <p class="mini_sub-title">Розы</p>
+                </div> 
+                <div class="sub-title"><img class="sub-title_img" src="@@webRoot/img/img2.jpg" alt="img">
+                    <p class="mini_sub-title">Подарки</p>
+                </div> 
+                <div class="sub-title"><img class="sub-title_img" src="@@webRoot/img/img3.jpg" alt="img">
+                    <p class="mini_sub-title">Подарочные корзины</p>
+                </div> 
+                <div class="sub-title"><img class="sub-title_img" src="@@webRoot/img/img4.jpg" alt="img">
+                    <p class="mini_sub-title">Цветы в коробке</p>
+                </div> 
+            </div>  
+
+            <div class="bonus">
+                <img src="@@webRoot/img/bonus1.png" alt="img">
+                <img src="@@webRoot/img/bonus2.png" alt="img">
+                <img src="@@webRoot/img/bonus3.png" alt="img">
                 
             </div>
-        </header>
+                
+        </div>
+    </header>
     <!-- Header End -->
     <div class="container">
         <section class="sales" id="sales">
@@ -322,6 +319,7 @@
     <script src="@@webRoot/js/index.js"></script>
     <script src="@@webRoot/js/card_gen.js"></script>
     <script src="@@webRoot/js/rating.js"></script>
+    <script src="@@webRoot/js/modals.js"></script>
     <script src="@@webRoot/js/likes.js"></script>
     <script src="@@webRoot/js/cart.js"></script>
     <script src="@@webRoot/js/map.js"></script>
