@@ -12,14 +12,52 @@ body{
 .container{
     max-width: 1416px;
     margin: 0 auto;
-    // padding: 0 20px;
+
+    .slider_arrow{
+        text-align: right;
+
+        .arrow_left, .arrow_right{
+            display: inline-block;
+            margin-bottom: 61px;
+            width: 16px;
+            height: 16px;
+
+            border-top: 2px solid;
+            border-left: 2px solid;
+            
+            cursor: pointer;
+            border-color: $color-onClick;                
+        }
+
+        [aria-disabled="true"]{
+            cursor: not-allowed;
+            border-color: $color-onClick_1;                
+        }
+
+        .arrow_right{
+            transform: rotate(135deg);            
+        }
+
+        .arrow_left{
+            transform: rotate(-45deg);            
+            margin-right: 4px; 
+        }
+    }
 }
+
+.tns-visually-hidden {
+    position: absolute;
+    left: -10000em;
+}
+
 .logo{
     width: 117px;
 }
+
 .icon_basket img{
     width: 33px;
 }
+
 .big_title{
     color:$color-contact;
     font-weight: 700;
