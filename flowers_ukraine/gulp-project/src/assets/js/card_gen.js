@@ -22,8 +22,10 @@ function add_to_block(block_obj, cards, elements_in_row=4, num_rows=null){
         let row = document.createElement('div');
         row.setAttribute("class", "row");
         for (let i=0; i < num_el_in_row; i++){
-            row.append(cards[i + row_num*num_el_in_row].get_dom_element());            
+            row.append(cards[i + row_num*num_el_in_row].get_dom_element());   
         };
+
+        row.style.width = "calc(0%)";         
         cards_block.append(row);
     };
 
@@ -31,14 +33,27 @@ function add_to_block(block_obj, cards, elements_in_row=4, num_rows=null){
     block_obj.append(cards_block);
 }
 
+// function slider_arrow_onclick(arrow){
+//     let block_obj = arrow.parentNode.parentNode;
+//     let rows = block_obj.querySelectorAll('.row');
+//     for (let row of rows) {
+//         row.style.width = "calc(100%)";         
+//         // sleep(1);
+//         // row.style.transform = "translate(0%, 0px, 0px)";                 
+//     }
+// }
+
+
 function connect_slider_to_block(block_obj, number_of_elements){    
     let rows = block_obj.querySelectorAll('.row');
     let sales_arr = block_obj.querySelector('.slider_arrow');
 
     for (let row of rows) {
         add_silder(row, sales_arr, number_of_elements);
+
     }
 }
+
 
 const card_sales = [
     new Card('101 красная роза', 2800, 19, './img/card1.png'),
